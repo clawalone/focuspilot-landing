@@ -1661,19 +1661,85 @@ input:checked+.slider:before {
 
 /* Responsive */
 @media (max-width: 900px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 30px !important;
+        /* Override inline styles if any */
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .hero .container {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
+        text-align: center;
+        padding-top: 100px;
+        /* More space for navbar */
+    }
+
+    .hero .cta-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Mobile Mockups - Remove Frames to save space */
+    .phone-mockup,
+    .phone-mockup-static {
+        border: none;
+        box-shadow: 0 20px 60px -10px rgba(0, 0, 0, 0.4);
+        width: 260px;
+        /* Smaller width */
+        height: auto;
+        border-radius: 20px;
+        /* Tighter radius for screen-only */
+        background: transparent;
+    }
+
+    .phone-mockup::after,
+    .phone-mockup-static::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+    }
+
+    .phone-mockup .punch-hole,
+    .phone-mockup-static .punch-hole {
+        display: none;
+        /* Hide punch hole on mobile */
+    }
+
+    .phone-mockup .screen,
+    .phone-mockup-static .screen {
+        border-radius: 20px;
+        /* Reset any specific mobile crop if needed, but keeping image fit */
+    }
+
+    .phone-mockup .screen img,
+    .phone-mockup-static .screen img {
+        border-radius: 20px;
     }
 
     .tour-row {
         flex-direction: column;
-        margin-bottom: 80px;
-        gap: 40px;
+        margin-bottom: 60px;
+        gap: 30px;
         text-align: center;
     }
 
@@ -1688,19 +1754,24 @@ input:checked+.slider:before {
         align-items: center;
     }
 
-    .phone-mockup-static {
-        width: 280px;
-        height: 560px;
+    .tour-content h2 {
+        font-size: 1.8rem;
     }
 
     .bento-grid,
-    .review-grid {
+    .review-grid,
+    .pricing-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .card-large,
     .card-wide {
         grid-column: span 1;
+    }
+
+    .bento-card {
+        padding: 24px;
     }
 
     .nav-menu {
@@ -1718,20 +1789,36 @@ input:checked+.slider:before {
     .mobile-only {
         display: block;
         color: var(--accent);
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        text-align: center;
     }
 
     .nav-menu.active {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 55px;
+        top: 60px;
         left: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.95);
+        background: var(--nav-bg);
         padding: 24px;
         backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid var(--glass-border);
         z-index: 999;
+        gap: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .nav-link:active {
+        background: rgba(255, 255, 255, 0.05);
     }
 }
 

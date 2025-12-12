@@ -1678,8 +1678,10 @@ input:checked+.slider:before {
     }
 
     .hero {
-        padding: 100px 0 60px;
-        /* Reduced from 180px */
+        padding: 40px 0 40px;
+        /* Drastically reduced from 100px */
+        margin-top: 60px;
+        /* Offset for navbar */
     }
 
     .hero .container {

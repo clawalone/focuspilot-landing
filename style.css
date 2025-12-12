@@ -1686,9 +1686,14 @@ input:checked+.slider:before {
     }
 
     .hero .cta-group {
+        display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 16px;
+        gap: 24px;
+        /* Increased gap */
+        margin-bottom: 20px;
+        height: auto;
+        /* Ensure no height constraint */
     }
 
     .hero .btn {

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FocusPilot - Master your flow with intelligent app blocking, focus timers, and deep analytics. The ultimate productivity companion.">
+    <meta name="keywords" content="productivity, focus timer, app blocker, pomodoro, digital wellbeing, focus stats">
+    <meta name="theme-color" content="#F5F5F7">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://focuspilot.app/">
+    <meta property="og:title" content="FocusPilot | Master Your Flow">
+    <meta property="og:description"
+        content="Stop doom-scrolling and start doing. Intelligent app blocking and focus timers.">
+    <meta property="og:image" content="https://focuspilot.app/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://focuspilot.app/">
+    <meta property="twitter:title" content="FocusPilot | Master Your Flow">
+    <meta property="twitter:description"
+        content="Stop doom-scrolling and start doing. Intelligent app blocking and focus timers.">
+    <meta property="twitter:image" content="https://focuspilot.app/assets/og-image.jpg">
+
+    <title>FocusPilot | Master Your Flow</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="FocusPilot Logo" class="logo-img"> FocusPilot
+            </a>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#download" class="nav-link mobile-only">Download</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#download" class="btn btn-primary">Download App</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content fade-up">
+                <div class="badge">
+                    <span class="badge-dot"></span> v2.0 Released
+                </div>
+                <h1>Focus like <br>never before.</h1>
+                <p>The ultimate tool to reclaim your attention span. Block distractions, track deep work, and build
+                    better habits.</p>
+                <div class="cta-group">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <i class="fa-brands fa-google-play"></i> Get on Google Play
+                    </a>
+                    <a href="#features" class="btn btn-light btn-lg">
+                        Learn More
+                    </a>
+                </div>
+                <div class="trust">
+                    <div class="avatars">
+                        <div class="avatar-group">
+                            <img src="https://ui-avatars.com/api/?name=A+L&background=random&color=fff" alt="User">
+                            <img src="https://ui-avatars.com/api/?name=J+D&background=random&color=fff" alt="User">
+                            <img src="https://ui-avatars.com/api/?name=M+K&background=random&color=fff" alt="User">
+                        </div>
+                    </div>
+                    <p>Loved by <strong>10,000+</strong> users</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-up delay-200">
+                <!-- Samsung Phone Mockup -->
+                <div class="phone-mockup floating">
+                    <div class="punch-hole"></div>
+                    <div class="screen" style="padding: 0;">
+                        <img src="assets/home.jpg" class="app-screen active" alt="FocusPilot Home">
+                        <img src="assets/timer.jpg" class="app-screen" alt="FocusPilot Timer">
+                        <img src="assets/stats.jpg" class="app-screen" alt="FocusPilot Stats">
+                        <img src="assets/tasks.jpg" class="app-screen" alt="FocusPilot Tasks">
+                        <img src="assets/history.jpg" class="app-screen" alt="FocusPilot History">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Productivity, refined.</h2>
+                <p>Everything you need to master your workflow.</p>
+            </div>
+            <!-- BENTO GRID LAYOUT -->
+            <div class="bento-grid">
+                <!-- Large Card 1 -->
+                <div class="bento-card card-large fade-up">
+                    <div class="card-content">
+                        <div class="icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Intelligent App Blocking</h3>
+                        <p>Select distractive apps and blacklist them during focus sessions. We'll prevent you from
+                            opening them automatically.</p>
+                    </div>
+                    <div class="card-visual visual-blocker">
+                        <div class="mock-list">
+                            <div class="mock-list-item">
+                                <div class="item-info">
+                                    <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+                                    <span>Instagram</span>
+                                </div>
+                                <div class="mock-toggle active"></div>
+                            </div>
+                            <div class="mock-list-item">
+                                <div class="item-info">
+                                    <i class="fa-brands fa-tiktok" style="color: #000;"></i>
+                                    <span>TikTok</span>
+                                </div>
+                                <div class="mock-toggle active"></div>
+                            </div>
+                            <div class="mock-list-item">
+                                <div class="item-info">
+                                    <i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i>
+                                    <span>Twitter</span>
+                                </div>
+                                <div class="mock-toggle active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Card 1 -->
+                <div class="bento-card fade-up delay-100">
+                    <div class="card-content">
+                        <div class="icon-circle"><i class="fa-solid fa-hourglass-start"></i></div>
+                        <h3>Smart Timers</h3>
+                        <p>Customizable Pomodoro intervals aligned with your energy levels.</p>
+                    </div>
+                    <div class="card-visual visual-timer">
+                        <div class="focus-dial">
+                            <div class="dial-inner">
+                                <span>25:00</span>
+                                <small>Focus</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Card 2 -->
+                <div class="bento-card fade-up delay-200">
+                    <div class="card-content">
+                        <div class="icon-circle"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Deep Analytics</h3>
+                        <p>Visualize your daily progress and spot burnout trends early.</p>
+                    </div>
+                    <div class="card-visual visual-analytics">
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                            <div class="bar active" style="height: 100%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wide Card -->
+                <div class="bento-card card-wide fade-up delay-300">
+                    <div class="card-content">
+                        <div class="icon-circle"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>Task Integration</h3>
+                        <p>Plan your day with a built-in lightweight todo list. Tag sessions to specific tasks for
+                            granular tracking.</p>
+                    </div>
+                    <div class="card-visual visual-tasks">
+                        <div class="mock-task-card">
+                            <div class="task-item">
+                                <div class="task-check checked">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="task-details">
+                                    <span class="task-text done">Design Review</span>
+                                    <span class="task-tag tag-purple">Deep Work</span>
+                                </div>
+                            </div>
+                            <div class="task-item">
+                                <div class="task-check"></div>
+                                <div class="task-details">
+                                    <span class="task-text">Frontend Implementation</span>
+                                    <span class="task-tag tag-blue">Coding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- NEW SECTION: APP TOUR (Zig-Zag) -->
+    <section id="app-tour" class="app-tour">
+        <div class="container">
+            <!-- Row 1: Home Screen (Left) + Text (Right) -->
+            <div class="tour-row fade-up">
+                <div class="tour-visual">
+                    <div class="phone-mockup-static">
+                        <div class="punch-hole"></div>
+                        <div class="screen">
+                            <img src="assets/home.jpg" alt="FocusPilot Home Screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-content">
+                    <div class="icon-circle-sm"><i class="fa-solid fa-house"></i></div>
+                    <h2>Your Command Center.</h2>
+                    <p>Access all your tools in one beautiful dashboard. View your daily streaks, quick-start timers,
+                        and
+                        manage your blocked apps with a single tap.</p>
+                </div>
+            </div>
+
+            <!-- Row 2: Timer Screen (Right) + Text (Left) -->
+            <div class="tour-row reverse fade-up delay-100">
+                <div class="tour-visual">
+                    <div class="phone-mockup-static">
+                        <div class="punch-hole"></div>
+                        <div class="screen">
+                            <img src="assets/timer.jpg" alt="FocusPilot Timer Screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-content">
+                    <div class="icon-circle-sm"><i class="fa-solid fa-stopwatch"></i></div>
+                    <h2>Distraction-free Focus.</h2>
+                    <p>Immerse yourself in work with our minimal timer. When the clock starts, distractions stop. Custom
+                        durations align with your personal energy levels.</p>
+                </div>
+            </div>
+
+            <!-- Row 3: Stats Screen (Left) + Text (Right) -->
+            <div class="tour-row fade-up delay-200">
+                <div class="tour-visual">
+                    <div class="phone-mockup-static">
+                        <div class="punch-hole"></div>
+                        <div class="screen">
+                            <img src="assets/stats.jpg" alt="FocusPilot Stats Screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-content">
+                    <div class="icon-circle-sm"><i class="fa-solid fa-chart-column"></i></div>
+                    <h2>Visualize Your Growth.</h2>
+                    <p>Track every minute of deep work. Our detailed analytics help you understand your peak flow times
+                        and celebrate your productivity milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: HOW IT WORKS (Timeline) -->
+    <section id="how-it-works" class="timeline-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>How it works.</h2>
+                <p>Three simple steps to reclaiming your time.</p>
+            </div>
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Define your distractions.</h3>
+                        <p>Identifty the apps that steal your attention. Social media, games, or news—you decide what
+                            stays and what goes during work hours.</p>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="glass-notification">
+                            <div class="notification-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="notification-content">
+                                <span>Instagram</span>
+                                <small>Blocked during Focus Mode</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="timeline-item fade-up delay-100">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Set your focus goal.</h3>
+                        <p>Choose a duration or a task. Whether it's a 25-minute Pomodoro or a 90-minute Deep Work
+                            session, FocusPilot adapts to you.</p>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="radial-progress">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="time">25:00</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="timeline-item fade-up delay-200">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Analyze and improve.</h3>
+                        <p>Review your daily and weekly stats. See exactly where your time went and celebrate your
+                            streaks.</p>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="trend-graph">
+                            <div class="graph-line"></div>
+                            <div class="graph-dot" style="left: 20%; bottom: 30%"></div>
+                            <div class="graph-dot" style="left: 50%; bottom: 60%"></div>
+                            <div class="graph-dot active" style="left: 80%; bottom: 85%">
+                                <div class="graph-tooltip">4.5h</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: COMPARISON TABLE -->
+    <section id="comparison" class="comparison-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Why FocusPilot?</h2>
+                <p>See how we stack up against the rest.</p>
+            </div>
+            <div class="comparison-table-wrapper fade-up">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight">FocusPilot</th>
+                            <th>Native Wellbeing</th>
+                            <th>Other Blockers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Strict App Blocking</td>
+                            <td class="highlight"><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Task Integration</td>
+                            <td class="highlight"><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Detailed Analytics</td>
+                            <td class="highlight"><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-circle-minus text-warning"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Themes</td>
+                            <td class="highlight"><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>No Subscription Req.</td>
+                            <td class="highlight"><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: PRICING -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Simple pricing.</h2>
+                <p>Invest in your productivity without breaking the bank.</p>
+            </div>
+
+            <div class="pricing-toggle fade-up">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span>Yearly <span class="badge-discount">-20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card fade-up">
+                    <div class="card-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p>Essential blocking for casual users.</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Basic App Blocking</li>
+                        <li><i class="fa-solid fa-check"></i> Pomodoro Timer</li>
+                        <li><i class="fa-solid fa-check"></i> 3 Day History</li>
+                    </ul>
+                    <a href="#download" class="btn btn-light btn-block">Download</a>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card card-popular fade-up delay-100">
+                    <div class="card-tag">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="4.99" data-yearly="3.99">4.99</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p>Unlock your full potential.</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> <strong>Strict Mode</strong> Blocking</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited History</li>
+                        <li><i class="fa-solid fa-check"></i> Task Management</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Themes</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item fade-up">
+                    <button class="faq-question">
+                        How does strict mode work?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Strict mode prevents you from unblocking apps or disabling the timer until the session is
+                            complete. It's designed for when you need absolute focus.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up text-center">
+                    <button class="faq-question">
+                        Is my data private?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. FocusPilot stores your usage data locally on your device. We do not sell or share your
+                            personal browsing habits with third parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-question">
+                        Can I whitelist apps?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can choose to block specific apps (Blacklist) or only allow specific apps
+                            (Whitelist) depending on your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-question">
+                        Does it work on iOS?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, FocusPilot is Android-only due to system limitations on iOS. An iOS version with
+                            limited features is in development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>User Stories</h2>
+            </div>
+            <div class="review-grid">
+                <div class="review-card fade-up">
+                    <div class="review-header">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+J&background=random" class="user-avatar"
+                            alt="Sarah J.">
+                        <div class="user-meta">
+                            <strong>Sarah J.</strong>
+                            <span>Writer</span>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Ideally the best focus app I've used. The app blocking feature is a game changer for my
+                            ADHD."
+                        </p>
+                    </div>
+                </div>
+                <div class="review-card fade-up delay-100">
+                    <div class="review-header">
+                        <img src="https://ui-avatars.com/api/?name=Mike+T&background=random" class="user-avatar"
+                            alt="Mike T.">
+                        <div class="user-meta">
+                            <strong>Mike T.</strong>
+                            <span>Engineer</span>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="stars">★★★★★</div>
+                        <p>"Clean interface, no ads, and the statistics actually help me understand my work habits."</p>
+                    </div>
+                </div>
+                <div class="review-card fade-up delay-200">
+                    <div class="review-header">
+                        <img src="https://ui-avatars.com/api/?name=Elena+R&background=random" class="user-avatar"
+                            alt="Elena R.">
+                        <div class="user-meta">
+                            <strong>Elena R.</strong>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="stars">★★★★★</div>
+                        <p>"I love how it forces me to stay off social media during deep work blocks. Highly
+                            recommended!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="cta-section">
+        <div class="container">
+            <section id="download" class="cta-section">
+                <div class="container">
+                    <div class="cta-glass-panel fade-up">
+                        <div class="cta-glow"></div>
+                        <div class="cta-content">
+                            <h2>Start your journey.</h2>
+                            <p>Reclaim your attention span today.</p>
+                            <div class="cta-buttons">
+                                <a href="#" class="btn btn-primary btn-xl">
+                                    <i class="fa-brands fa-google-play"></i> Get on Google Play
+                                </a>
+                            </div>
+                            <p class="cta-note">Requires Android 8.0+</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- MEGA FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo">FocusPilot</a>
+                    <p>Reclaim your attention in a distracted world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#comparison">Comparison</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Acceptable Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FocusPilot Inc. All rights reserved.</p>
+                <div class="language-selector">
+                    <i class="fa-solid fa-globe"></i> English (US)
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
